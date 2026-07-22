@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Math Quiz</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: rgba(240, 240, 240, 0.95);
+            min-height: 100vh;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            backdrop-filter: blur(10px);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            color: #ffffff;
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 0.5rem;
+            text-align: center;
+        }
+        
+        h2 {
+            color: #333;
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 3rem 2rem;
+            margin: 2rem auto;
+            max-width: 800px;
+        }
+        
+        .hero h2 {
+            font-size: 2.2rem;
+            color: #667eea;
+            margin-bottom: 1rem;
+        }
+        
+        .hero p {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+        
+        .cta-button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1rem 2.5rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 1rem;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+        }
+        
+        /* Categories Container */
+        .categories-container {
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 0 2rem;
+        }
+        
+        .categories-section-title {
+            text-align: center;
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 3rem;
+        }
+        
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .category-card {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+        
+        .category-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.2);
+        }
+        
+        .category-card h3 {
+            color: #667eea;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .category-card p {
+            color: #666;
+            margin-bottom: 1.5rem;
+            font-size: 0.95rem;
+        }
+        
+        .category-card ul {
+            list-style: none;
+            margin-bottom: 1rem;
+        }
+        
+        .category-card li {
+            margin-bottom: 0.75rem;
+        }
+        
+        .category-card a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+        
+        .category-card a:hover {
+            color: #764ba2;
+            transform: translateX(5px);
+        }
+        
+        @media (max-width: 768px) {
+            .categories-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .categories-section-title {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Practice Math</h1>
+    </div>
+    
+    <div class="hero">
+        <h2>Welcome to Math Practice</h2>
+        <p>Master mathematics through interactive quizzes. Choose from various topics including Calculus, Statistics, Linear Algebra, and more. Each quiz features multiple-choice questions designed to help you learn and improve your skills.</p>
+    </div>
+    
+    <div id="categories" class="categories-container">
+        <h2 class="categories-section-title">Explore Topics</h2>
+        <div class="categories-grid">
+            
+            <div class="category-card">
+                <h3>Calculus</h3>
+                <p>Choose a calculus subcategory to get started:</p>
+                <ul>
+                    <li><a href="/quizShowCase?category=Calculus&amp;subCategory=Calculus1">Calculus 1</a></li>
+                    <li><a href="/quizShowCase?category=Calculus&amp;subCategory=Calculus2">Calculus 2</a></li>
+                    <li><a href="/quizShowCase?category=Calculus&amp;subCategory=MultivariableCalculus">Multivariable Calculus</a></li>
+                    <li><a href="/quizShowCase?category=Calculus&amp;subCategory=Differential%20Equations">Differential Equations</a></li>
+                </ul>
+            </div>
+            
+            <div class="category-card">
+                <h3>Statistics</h3>
+                <p>Explore statistics problems and concepts:</p>
+                <ul>
+                    <li><a href="/quizShowCase?category=Statistics&amp;subCategory=Probability">Probability</a></li>
+                    <li><a href="/quizShowCase?category=Statistics&amp;subCategory=MathematicalStatistics">Mathematical Statistics</a></li>
+                </ul>
+            </div>
+            
+            <div class="category-card">
+                <h3>Algebra</h3>
+                <p>Master algebra topics:</p>
+                <ul>
+                    <li><a href="/quizShowCase?category=Algebra&amp;subCategory=Linear">Linear</a></li>
+                    <li><a href="/quizShowCase?category=Algebra&amp;subCategory=Discrete">Discrete</a></li>
+                    <li><a href="/quizShowCase?category=Algebra&amp;subCategory=Abstract">Abstract</a></li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{value}}</title>
+    <script>
+    MathJax = {
+        tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        }
+    };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: rgba(240, 240, 240, 0.95);
+            min-height: 100vh;
+            color: #333;
+            line-height: 1.6;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            backdrop-filter: blur(10px);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        h1 {
+            color: #ffffff;
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 0.5rem;
+            text-align: center;
+        }
+        h2 {
+            color: #000000;
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        h3 {
+            color: #333;
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            margin-top: 1rem;
+        }
+        h4 {
+            color: #666;
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin-bottom: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .home-button {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            text-decoration: none;
+            padding: 0.7rem 1.5rem;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 2px solid white;
+        }
+        .home-button:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+        .category-table {
+            table-layout: fixed;
+            background: #ccccff;
+            border: 1px solid black;
+        }
+        .category-table td a{
+            display: none;
+        }
+        .category-table td:hover{
+            background-color: black;
+            color: white;
+        }
+        .category-table td:hover a{
+            display: block;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0;
+            border: 1px solid black;
+        }
+        td {
+            padding: 1rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 1px solid black;
+        }
+        td a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+            display: block;
+            padding: 0.5rem;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            margin: 0.5rem 0;
+        }
+        td a:hover {
+            background: #667eea;
+            color: white;
+            transform: translateY(-1px);
+            box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+        }
+        tr{
+            border: 1px solid black;
+        }
+        .content-container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+        .subcat {
+            background: white;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .quiz-item {
+            padding: 0.75rem 0;
+            margin: 0.5rem 0;
+        }
+        .quiz-item a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+        .quiz-item a:hover {
+            background: #f0f0f0;
+            color: #764ba2;
+            transform: translateX(4px);
+        }
+    </style>
+</head>
+<body onload="showingMathValues()">
+    <!-- hidden fields hold selection values -->
+    <div id="text" hidden>{{value}}</div>
+    <div id="subCategory" hidden>{{subCategory}}</div>
+    <div class="header">
+        <a href="/" class="home-button">🏠 Home</a>
+        <h1>Practice Math</h1>
+        <table class="category-table">
+            <tr>
+                <td>
+                    <strong>Calculus</strong>
+                    <a href="/quizShowCase?category=Calculus&amp;subCategory=Calculus1">Calculus 1</a>
+                    <a href="/quizShowCase?category=Calculus&amp;subCategory=Calculus2">Calculus 2</a>
+                    <a href="/quizShowCase?category=Calculus&amp;subCategory=MultivariableCalculus">Multivariable Calculus</a>
+                    <a href="/quizShowCase?category=Calculus&amp;subCategory=DifferentialEquations">Differential Equations</a>
+                </td>
+                <td>
+                    <strong>Statistics</strong>
+                    <a href="/quizShowCase?category=Statistics&amp;subCategory=Probability">Probability</a>
+                    <a href="/quizShowCase?category=Statistics&amp;subCategory=MathematicalStatistics">Mathematical Statistics</a>
+                </td>
+                <td>
+                    <strong>Algebra</strong>
+                    <a href="/quizShowCase?category=Algebra&amp;subCategory=Linear">Linear</a>
+                    <a href="/quizShowCase?category=Algebra&amp;subCategory=Discrete">Discrete</a>
+                    <a href="/quizShowCase?category=Algebra&amp;subCategory=Abstract">Abstract</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="content-container">
+        <div id="Calculus" style="display:none">
+            <h2>Calculus</h2>
+            <div class="subcat" data-subcategory="Calculus1" id="Calculus1" style="display:none">
+                <h3>Calculus 1</h3>
+                <h4>Derivatives & Integrals</h4>
+                <div class="quiz-item"><a href="/questions?category=Calculus&amp;subCategory=Calculus1&amp;quiz=quiz1">Quiz 1: Basic Derivatives</a></div>
+                <div class="quiz-item"><a href="/questions?category=Calculus&amp;subCategory=Calculus1&amp;quiz=quiz2">Quiz 2: Advanced Derivatives</a></div>
+            </div>
+            <div class="subcat" data-subcategory="Calculus2" id="Calculus2" style="display:none">
+                <h3>Calculus 2</h3>
+                <h4>Integration Techniques</h4>
+                <div class="quiz-item"><a href="/questions?category=Calculus&amp;subCategory=Calculus2&amp;quiz=quiz1">Quiz 1: Integration Techniques</a></div>
+            </div>
+            <div class="subcat" data-subcategory="MultivariableCalculus" id="MultivariableCalculus" style="display:none">
+                <h3>Multivariable Calculus</h3>
+                <h4>Partial Derivatives</h4>
+                <div class="quiz-item"><a href="/questions?category=Calculus&amp;subCategory=MultivariableCalculus&amp;quiz=quiz1">Quiz 1: Basic Partial Derivatives</a></div>
+                <div class="quiz-item"><a href="/questions?category=Calculus&amp;subCategory=MultivariableCalculus&amp;quiz=quiz2">Quiz 2: Advanced Partial Derivatives</a></div>
+            </div>
+            <div class="subcat" data-subcategory="DifferentialEquations" id="DifferentialEquations" style="display:none">
+                <h3>Differential Equations</h3>
+                <h4>Differential Equations</h4>
+                <div class="quiz-item"><a href="/questions?category=Calculus&amp;subCategory=DifferentialEquations&amp;quiz=quiz1">Quiz 1: Basic Differential Equations</a></div>
+            </div>
+        </div>
+
+        <div id="Statistics" style="display:none">
+            <h2>Statistics</h2>
+            <div class="subcat" data-subcategory="Probability" style="display:none">
+                <h3>Probability</h3>
+                <h4>Basic Probability</h4>
+                <div class="quiz-item"><a href="/questions?category=Statistics&amp;subCategory=Probability&amp;quiz=quiz1">Quiz 1: Basic Probability</a></div>
+            </div>
+            <div class="subcat" data-subcategory="MathematicalStatistics" style="display:none">
+                <h3>Mathematical Statistics</h3>
+                <h4>Expectation & Variance</h4>
+                <div class="quiz-item"><a href="/questions?category=Statistics&amp;subCategory=MathematicalStatistics&amp;quiz=quiz1">Quiz 1: Basic Inference</a></div>
+                <h5>Markov Chain Properties</h5>
+                <div class="quiz-item"><a href="/questions?category=Statistics&amp;subCategory=MathematicalStatistics&amp;quiz=quiz2">Quiz 1: Basic Properties</a></div>
+                <div class="quiz-item"><a href="/questions?category=Statistics&amp;subCategory=MathematicalStatistics&amp;quiz=quiz3">Quiz 2: Intermediate Properties</a></div>
+                <h5>Markov Chain Computation</h5>
+                <div class="quiz-item"><a href="/questions?category=Statistics&amp;subCategory=MathematicalStatistics&amp;quiz=quiz4">Quiz 1: Random Walk intro</a></div>
+            </div>
+        </div>
+
+        <div id="Algebra" style="display:none">
+            <h2>Algebra</h2>
+            <div class="subcat" data-subcategory="Linear" style="display:none">
+                <h3>Linear Algebra</h3>
+                <h4>Matrices & Vectors</h4>
+                <div class="quiz-item"><a href="/questions?category=Algebra&amp;subCategory=Linear&amp;quiz=quiz1">Quiz 1: Basic Matrices</a></div>
+                <h5>Dot Products</h5>
+                <div class="quiz-item"><a href="/questions?category=Algebra&amp;subCategory=Linear&amp;quiz=quiz2">Quiz 1: Easy Dot Product</a></div>
+                <h5>Cross Produtce</h5>
+                <div class="quiz-item"><a href="/questions?category=Algebra&amp;subCategory=Linear&amp;quiz=quiz3">Quiz 1: Easy Cross Product</a></div>
+                <h5>Matrix Multiplication</h5>
+                <div class="quiz-item"><a href="/questions?category=Algebra&amp;subCategory=Linear&amp;quiz=quiz4">Quiz 1: Easy Matrix Multiplication</a></div>
+            </div>
+            <div class="subcat" data-subcategory="Discrete" style="display:none">
+                <h3>Discrete Algebra</h3>
+                <h4>Logic & Set Theory</h4>
+                <div class="quiz-item"><a href="/questions?category=Algebra&amp;subCategory=Discrete&amp;quiz=quiz1">Quiz 1: Basic Logic</a></div>
+            </div>
+            <div class="subcat" data-subcategory="Abstract" style="display:none">
+                <h3>Abstract Algebra</h3>
+                <h4>Groups & Rings</h4>
+                <div class="quiz-item"><a href="/questions?category=Algebra&amp;subCategory=Abstract&amp;quiz=quiz1">Quiz 1: Basic Groups</a></div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function showingMathValues(){
+            const categoryValue = document.getElementById("text").textContent.trim();
+            const subCategory = document.getElementById("subCategory").textContent.trim();
+            const mathValues = ["Calculus", "Statistics", "Algebra"];
+            
+            // Show/hide main category sections
+            mathValues.forEach(x => {
+                const elementIter = document.getElementById(x);
+                if(elementIter) {
+                    elementIter.style.display = (x === categoryValue) ? 'block' : 'none';
+                }
+            });
+            
+            // Show/hide subcategories within selected category
+            const subcats = document.querySelectorAll('.subcat');
+            subcats.forEach(el => {
+                const val = el.getAttribute('data-subcategory');
+                if(val === subCategory || subCategory === '') {
+                    el.style.display = 'block';
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>

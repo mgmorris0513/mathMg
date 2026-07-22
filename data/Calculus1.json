@@ -1,0 +1,227 @@
+{"Calculus1": {
+      "quiz1": {
+        "1": {
+          "question": "What is the derivative of $x^2$?",
+          "multipleChoiceAnswers": {
+            "1": "2x",
+            "2": "$x^2$",
+            "3": "$2x^2$",
+            "4": "x"
+          },
+          "correctAnswer": "2x",
+          "questionNumber": 1
+        },
+        "2": {
+          "question": "What is the integral of $x^2$?",
+          "multipleChoiceAnswers": {
+            "1": "$x^3/3+C$",
+            "2": "$x^3+C$",
+            "3": "$3x^3+C$",
+            "4": "$x^2/3+C$"
+          },
+          "correctAnswer": "$x^3/3+C$",
+          "questionNumber": 2
+        },
+        "3": {
+          "question": "What is the derivative of $x^3$?",
+          "multipleChoiceAnswers": {
+            "1": "$3x^2$",
+            "2": "$x^2$",
+            "3": "3x",
+            "4": "$x^3$"
+          },
+          "correctAnswer": "$3x^2$",
+          "questionNumber": 3
+        },
+        "4": {
+          "question": "What is the integral of $x^3$?",
+          "multipleChoiceAnswers": {
+            "1": "$x^4/4+C$",
+            "2": "$x^4+C$",
+            "3": "$4x^4+C$",
+            "4": "$x^3/4+C$"
+          },
+          "correctAnswer": "$x^4/4+C$",
+          "questionNumber": 4
+        },
+        "5": {
+          "question": "What is the derivative of $x^4$?",
+          "multipleChoiceAnswers": {
+            "1": "$4x^3$",
+            "2": "$x^3$",
+            "3": "4x",
+            "4": "$x^4$"
+          },
+          "correctAnswer": "$4x^3$",
+          "questionNumber": 5
+        },
+        "6": {
+          "question": "What is the integral of $x^4$?",
+          "multipleChoiceAnswers": {
+            "1": "$x^5/5+C$",
+            "2": "$x^5+C$",
+            "3": "$5x^5+C$",
+            "4": "$x^4/5+C$"
+          },
+          "correctAnswer": "$x^5/5+C$",
+          "questionNumber": 6
+        },
+        "7": {
+          "question": "What is the derivative of $x^5$?",
+          "multipleChoiceAnswers": {
+            "1": "$5x^4$",
+            "2": "$x^4$",
+            "3": "5x",
+            "4": "$x^5$"
+          },
+          "correctAnswer": "$5x^4$",
+          "questionNumber": 7
+        },
+        "8": {
+          "question": "What is the integral of $x^5$?",
+          "multipleChoiceAnswers": {
+            "1": "$x^6/6+C$",
+            "2": "$x^6+C$",
+            "3": "$6x^6+C$",
+            "4": "$x^5/6+C$"
+          },
+          "correctAnswer": "$x^6/6+C$",
+          "questionNumber": 8
+        },
+        "9": {
+          "question": "What is the derivative of $x^6$?",
+          "multipleChoiceAnswers": {
+            "1": "$6x^5$",
+            "2": "$x^5$",
+            "3": "6x",
+            "4": "$x^6$"
+          },
+          "correctAnswer": "$6x^5$",
+          "questionNumber": 9
+        },
+        "10": {
+          "question": "What is the integral of $x^6$?",
+          "multipleChoiceAnswers": {
+            "1": "$x^7/7+C$",
+            "2": "$x^7+C$",
+            "3": "$7x^7+C$",
+            "4": "$x^6/7+C$"
+          },
+          "correctAnswer": "$x^7/7+C$",
+          "questionNumber": 10
+        }
+      },
+      "quiz2": {
+        "1": {
+          "question": "What is the integral of $x^2+y^2+z^2dxdydz$",
+          "multipleChoiceAnswers": {
+            "1": "$(x^2/3+y^2/3+z^2/3)xyz+Cyz+Dz+E$",
+            "2": "$(x^3+y^3+z^3)xyz+C$",
+            "3": "$x^3y^3z^3/9+Cyz+Dz+E$",
+            "4": "(x+y+z)xyz+Cyz+Dz+E"
+          },
+          "correctAnswer": "$(x^2/3+y^2/3+z^2/3)xyz+Cyz+Dz+E$",
+          "questionNumber": 1
+        },
+        "2": {
+          "question": "What is the integral of $x^2y^2z^2dxdydz$",
+          "multipleChoiceAnswers": {
+            "1": "$x^3y^3z^3/27+Cyz+Dz+E$",
+            "2": "$x^3y^3z^3/9+C$",
+            "3": "$x^3y^3z^3/81+Cyz+Dz+E$",
+            "4": "$x^2y^2z^2/3+C$"
+          },
+          "correctAnswer": "$x^3y^3z^3/27+Cyz+Dz+E$",
+          "questionNumber": 2
+        },
+        "3": {
+          "question": "What is the derivative of $sin(x)$?",
+          "multipleChoiceAnswers": {
+            "1": "cos(x)",
+            "2": "sin(x)",
+            "3": "-cos(x)",
+            "4": "tan(x)"
+          },
+          "correctAnswer": "cos(x)",
+          "questionNumber": 3
+        },
+        "4": {
+          "question": "What is the integral of $cos(x)$?",
+          "multipleChoiceAnswers": {
+            "1": "sin(x)+C",
+            "2": "cos(x)+C",
+            "3": "-sin(x)+C",
+            "4": "tan(x)+C"
+          },
+          "correctAnswer": "sin(x)+C",
+          "questionNumber": 4
+        },
+        "5": {
+          "question": "What is the derivative of $e^x$?",
+          "multipleChoiceAnswers": {
+            "1": "$e^x$",
+            "2": "$x*e^x$",
+            "3": "1",
+            "4": "0"
+          },
+          "correctAnswer": "$e^x$",
+          "questionNumber": 5
+        },
+        "6": {
+          "question": "What is the integral of $e^x$?",
+          "multipleChoiceAnswers": {
+            "1": "$e^x+C$",
+            "2": "$x*e^x+C$",
+            "3": "$e^(x^2)+C$",
+            "4": "1"
+          },
+          "correctAnswer": "$e^x+C$",
+          "questionNumber": 6
+        },
+        "7": {
+          "question": "What is the derivative of $ln(x)$?",
+          "multipleChoiceAnswers": {
+            "1": "1/x",
+            "2": "x",
+            "3": "1",
+            "4": "0"
+          },
+          "correctAnswer": "1/x",
+          "questionNumber": 7
+        },
+        "8": {
+          "question": "What is the integral of $1/x$?",
+          "multipleChoiceAnswers": {
+            "1": "ln(x)+C",
+            "2": "x+C",
+            "3": "1+C",
+            "4": "ln(1/x)+C"
+          },
+          "correctAnswer": "ln(x)+C",
+          "questionNumber": 8
+        },
+        "9": {
+          "question": "What is the derivative of $tan(x)$?",
+          "multipleChoiceAnswers": {
+            "1": "$sec^2(x)$",
+            "2": "sin(x)",
+            "3": "cot(x)",
+            "4": "1"
+          },
+          "correctAnswer": "$sec^2(x)$",
+          "questionNumber": 9
+        },
+        "10": {
+          "question": "What is the integral of $tan(x)$?",
+          "multipleChoiceAnswers": {
+            "1": "ln|sec(x)|+C",
+            "2": "sec(x)+C",
+            "3": "-ln|cos(x)|+C",
+            "4": "cot(x)+C"
+          },
+          "correctAnswer": "-ln|cos(x)|+C",
+          "questionNumber": 10
+        }
+      }
+    }
+}

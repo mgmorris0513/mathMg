@@ -1,0 +1,115 @@
+{"Abstract": {
+      "quiz1": {
+        "1": {
+          "question": "What is an identity element in a group?",
+          "multipleChoiceAnswers": {
+            "1": "An element that leaves all others unchanged",
+            "2": "An element that's in every group",
+            "3": "A random element",
+            "4": "The inverse"
+          },
+          "correctAnswer": "An element that leaves all others unchanged",
+          "questionNumber": 1
+        },
+        "2": {
+          "question": "Is the set of integers under addition a group?",
+          "multipleChoiceAnswers": {
+            "1": "Yes",
+            "2": "No",
+            "3": "Sometimes",
+            "4": "Undefined"
+          },
+          "correctAnswer": "Yes",
+          "questionNumber": 2
+        },
+        "3": {
+          "question": "What is a subgroup?",
+          "multipleChoiceAnswers": {
+            "1": "A subset that is also a group under the same operation",
+            "2": "A group within a group structure",
+            "3": "Any subset of a group",
+            "4": "A group with fewer elements"
+          },
+          "correctAnswer": "A subset that is also a group under the same operation",
+          "questionNumber": 3
+        },
+        "4": {
+          "question": "What is the order of a finite group?",
+          "multipleChoiceAnswers": {
+            "1": "The number of elements in the group",
+            "2": "The largest element",
+            "3": "The inverse count",
+            "4": "The identity count"
+          },
+          "correctAnswer": "The number of elements in the group",
+          "questionNumber": 4
+        },
+        "5": {
+          "question": "Is the set of real numbers under multiplication a group?",
+          "multipleChoiceAnswers": {
+            "1": "No (0 has no inverse)",
+            "2": "Yes",
+            "3": "Sometimes",
+            "4": "Undefined"
+          },
+          "correctAnswer": "No (0 has no inverse)",
+          "questionNumber": 5
+        },
+        "6": {
+          "question": "What is a ring?",
+          "multipleChoiceAnswers": {
+            "1": "An algebraic structure with + and · satisfying certain axioms",
+            "2": "A group with two operations",
+            "3": "A multiplication of groups",
+            "4": "A set of numbers"
+          },
+          "correctAnswer": "An algebraic structure with + and · satisfying certain axioms",
+          "questionNumber": 6
+        },
+        "7": {
+          "question": "Is Z (integers) a ring under addition and multiplication?",
+          "multipleChoiceAnswers": {
+            "1": "Yes",
+            "2": "No",
+            "3": "Sometimes",
+            "4": "Undefined"
+          },
+          "correctAnswer": "Yes",
+          "questionNumber": 7
+        },
+        "8": {
+          "question": "What property does a commutative group have?",
+          "multipleChoiceAnswers": {
+            "1": "a*b = b*a for all a,b",
+            "2": "a*b ≠ b*a",
+            "3": "a + b = 0",
+            "4": "a*a = a"
+          },
+          "correctAnswer": "a*b = b*a for all a,b",
+          "questionNumber": 8
+        },
+        "9": {
+          "question": "What is the inverse of element a in a group?",
+          "multipleChoiceAnswers": {
+            "1": "An element $a^(-1)$ such that $a*a^(-1)$ = e",
+            "2": "The opposite of a",
+            "3": "The negative of a",
+            "4": "Zero"
+          },
+          "correctAnswer": "An element $a^(-1)$ such that $a*a^(-1)$ = e",
+          "questionNumber": 9
+        },
+        "10": {
+          "question": "Is the symmetric group S_3 abelian (commutative)?",
+          "multipleChoiceAnswers": {
+            "1": "No",
+            "2": "Yes",
+            "3": "Sometimes",
+            "4": "Undefined"
+          },
+          "correctAnswer": "No",
+          "questionNumber": 10
+        }
+      }
+    }
+  }

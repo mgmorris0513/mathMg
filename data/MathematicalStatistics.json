@@ -1,0 +1,457 @@
+{"MathematicalStatistics": {
+      "quiz1": {
+        "1": {
+          "question": "What is the Expectation of a 6-sided die roll?",
+          "multipleChoiceAnswers": {
+            "1": "3.5",
+            "2": "2.5",
+            "3": "4.5",
+            "4": "5.5"
+          },
+          "correctAnswer": "3.5",
+          "questionNumber": 1
+        },
+        "2": {
+          "question": "What is the Variance of a 6-sided die roll?",
+          "multipleChoiceAnswers": {
+            "1": "35/12",
+            "2": "25/12",
+            "3": "15/12",
+            "4": "5/12"
+          },
+          "correctAnswer": "35/12",
+          "questionNumber": 2
+        },
+        "3": {
+          "question": "What is the expectation of a n-sided die roll?",
+          "multipleChoiceAnswers": {
+            "1": "(n+1)/2",
+            "2": "n/2",
+            "3": "(n-1)/2",
+            "4": "n"
+          },
+          "correctAnswer": "(n+1)/2",
+          "questionNumber": 3
+        },
+        "4": {
+          "question": "What is the variance of a n-sided die roll?",
+          "multipleChoiceAnswers": {
+            "1": "$(n^2-1)/12$",
+            "2": "$(n^2+1)/12$",
+            "3": "$(n^2-1)/6$",
+            "4": "$(n^2+1)/6$"
+          },
+          "correctAnswer": "$(n^2-1)/12$",
+          "questionNumber": 4
+        },
+        "5": {
+          "question": "What is the expectation of a normal function with parameters var=0, $\\mu=1$",
+          "multipleChoiceAnswers": {
+            "1": "1",
+            "2": "0",
+            "3": "2",
+            "4": "-1"
+          },
+          "correctAnswer": "1",
+          "questionNumber": 5
+        },
+        "6": {
+          "question": "What is the covariance of two independent variables?",
+          "multipleChoiceAnswers": {
+            "1": "0",
+            "2": "1",
+            "3": "var(X)*var(Y)",
+            "4": "E[XY]"
+          },
+          "correctAnswer": "0",
+          "questionNumber": 6
+        },
+        "7": {
+          "question": "What does the Central Limit Theorem state?",
+          "multipleChoiceAnswers": {
+            "1": "The mean of sample means equals the population mean",
+            "2": "All distributions are normal",
+            "3": "Variance equals mean",
+            "4": "Standard deviation is always 1"
+          },
+          "correctAnswer": "The mean of sample means equals the population mean",
+          "questionNumber": 7
+        },
+        "8": {
+          "question": "What is the formula for standard deviation?",
+          "multipleChoiceAnswers": {
+            "1": "√(variance)",
+            "2": "variance/2",
+            "3": "mean/2",
+            "4": "mean²"
+          },
+          "correctAnswer": "√(variance)",
+          "questionNumber": 8
+        },
+        "9": {
+          "question": "What is P(A|B)?",
+          "multipleChoiceAnswers": {
+            "1": "P(A∩B)/P(B)",
+            "2": "P(A)+P(B)",
+            "3": "P(A)*P(B)",
+            "4": "P(B)/P(A)"
+          },
+          "correctAnswer": "P(A∩B)/P(B)",
+          "questionNumber": 9
+        },
+        "10": {
+          "question": "What is the expected value of a uniform distribution on [a,b]?",
+          "multipleChoiceAnswers": {
+            "1": "(a+b)/2",
+            "2": "b-a",
+            "3": "(b-a)/2",
+            "4": "a"
+          },
+          "correctAnswer": "(a+b)/2",
+          "questionNumber": 10
+        }
+      },
+      "quiz2" :{
+        "1":{
+          "question":"What is the stochastic matrix of the Markov Chain pictured here:",
+          "multipleChoiceAnswers":{
+            "1":"$\\begin{bmatrix}0&1/2&1/2\\\\0&1/2&1/2\\\\0&0&1\\end{bmatrix}$",
+            "2":"$\\begin{bmatrix}1/2&1/2&0\\\\1/2&1/2&0\\\\0&0&1\\end{bmatrix}$",
+            "3":"$\\begin{bmatrix}1/3&1/3&1/3\\\\1/3&1/3&1/3\\\\1/3&1/3&1/3\\end{bmatrix}$",
+            "4":"No stochastic matrix exists"
+          },
+          "correctAnswer": "$\\begin{bmatrix}0&1/2&1/2\\\\0&1/2&1/2\\\\0&0&1\\end{bmatrix}$",
+          "questionNumber": 1,
+          "picture": "MarkovChainQuiz2Pt1.png"
+        },
+        "2":{
+          "question":"What state will you be in after 100 steps in this Markov Chain?",
+          "multipleChoiceAnswers":{
+            "1":"0",
+            "2":"1",
+            "3":"2",
+            "4":"No way to tell"
+          },
+          "correctAnswer": "No way to tell",
+          "questionNumber": 2
+        },
+        "3": {
+          "question":"What is the probability of being in state 1 after 3 steps?",
+          "multipleChoiceAnswers":{
+            "1":"1",
+            "2":"1/8",
+            "3":"1/4",
+            "4":"1/2"
+          },
+          "correctAnswer": "1/8",
+          "questionNumber": 3
+        },
+        "4":{
+          "question":"What is the probability of being in state 1 after n steps?",
+          "multipleChoiceAnswers":{
+            "1":"0",
+            "2":"$(1/2)^n$",
+            "3":"1",
+            "4":"$(1/2)^{(n-1)}$"
+          },
+          "correctAnswer": "$(1/2)^n$",
+          "questionNumber": 4
+        },
+        "5":{
+          "question":"In expectation how many steps will it take for nodes 0, and 1 to reach node 2?",
+          "multipleChoiceAnswers":{
+            "1":"For node 0:2, For node 1:2",
+            "2":"For node 0:1, For node 1:1",
+            "3":"For node 0:1.5, For node 1:2",
+            "4":"For node 0:2, For node 1:1.5"
+          },
+          "correctAnswer":"For node 0:2, For node 1:2",
+          "questionNumber":5
+        },
+        "6":{
+          "question":"What is the stochastic matrix of the Markov Chain pictured here:",
+          "multipleChoiceAnswers":{
+            "1":"$\\begin{bmatrix}0&1/2&0&1/2&0\\\\0&0&1&0&0\\\\0&1&0&0&0\\\\0&0&0&0&1\\\\0&0&0&1&0\\end{bmatrix}$",
+            "2":"$\\begin{bmatrix}1/2&0&1/2&0&0\\\\0&1&0&0&0\\\\0&0&1&0&0\\\\0&0&0&1&0\\\\0&0&0&0&1\\end{bmatrix}$",
+            "3":"$\\begin{bmatrix}1/5&1/5&1/5&1/5&1/5\\\\1/5&1/5&1/5&1/5&1/5\\\\1/5&1/5&1/5&1/5&1/5\\\\1/5&1/5&1/5&1/5&1/5\\\\1/5&1/5&1/5&1/5&1/5\\end{bmatrix}$",
+            "4":"No stochastic matrix exists"
+          },
+          "correctAnswer":"$\\begin{bmatrix}0&1/2&0&1/2&0\\\\0&0&1&0&0\\\\0&1&0&0&0\\\\0&0&0&0&1\\\\0&0&0&1&0\\end{bmatrix}$",
+          "questionNumber":6,
+          "picture":"MarkovChainQuiz2Pt2.png"
+        },
+        "7":{
+          "question":"Is it possible to reach node 2 from node 4?",
+          "multipleChoiceAnswers":{
+            "1":"Yes, with a large probability",
+            "2":"No",
+            "3":"With a small probability",
+            "4":"Guranteed"
+          },
+          "correctAnswer":"No",
+          "questionNumber":7
+        },
+        "8":{
+          "question":"What is the probability of reaching node 2 in infinite steps from node 0?",
+          "multipleChoiceAnswers":{
+            "1":"1/4",
+            "2":"1/2",
+            "3":"1",
+            "4":"0"
+          },
+          "correctAnswer":"1/2",
+          "questionNumber":8
+        },
+        "9":{
+          "question":"What is the expected number of steps it will take to reach node 2 from node 1?",
+          "multipleChoiceAnswers":{
+            "1":"1",
+            "2":"2",
+            "3":"undefined",
+            "4":"1/2"
+          },
+          "correctAnswer":"1",
+          "questionNumber":9
+        },
+        "10":{
+          "question":"What is the expected number of steps it will take to reach node 2 from node 0?",
+          "multipleChoiceAnswers":{
+            "1":"1",
+            "2":"2",
+            "3":"undefined",
+            "4":"1/2"
+          },
+          "correctAnswer":"undefined",
+          "questionNumber":10
+        }
+      },
+    "quiz3" :{
+      "1":{
+        "question": "Represent this markov chain as I-P where P is the stochastic matrix, and I is the identity matrix.",
+        "multipleChoiceAnswers":{
+          "1":"$\\begin{bmatrix}0&1/2&0&1/2&0\\\\0&0&1&0&0\\\\0&1&0&0&0\\\\0&0&0&0&1\\\\0&0&0&1&0\\end{bmatrix}$",
+          "2":"$\\begin{bmatrix}1&-1/2&0&-1/2&0\\\\0&1&-1&0&0\\\\0&-1&1&0&0\\\\0&0&0&1&-1\\\\0&0&0&-1&1\\end{bmatrix}$",
+          "3":"$\\begin{bmatrix}1/2&0&1/2&0&0\\\\0&1&0&0&0\\\\0&0&1&0&0\\\\0&0&0&1&0\\\\0&0&0&0&1\\end{bmatrix}$",
+          "4":"$\\begin{bmatrix}1/2&0&-1/2&0&0\\\\0&1&0&0&0\\\\0&0&1&0&0\\\\0&0&0&1&0\\\\0&0&0&0&1\\end{bmatrix}$"
+        },
+        "questionNumber": 1,
+        "correctAnswer": "$\\begin{bmatrix}0&1/2&0&1/2&0\\\\0&0&1&0&0\\\\0&1&0&0&0\\\\0&0&0&0&1\\\\0&0&0&1&0\\end{bmatrix}$",
+        "picture": "MarkovChainQuiz2Pt2.png"
+      },
+      "2":{
+        "question": "Set up the system of equations where A is the previous matrix $A\\mathbf{x} = \\mathbf{b}$, where $\\mathbf{x} = [x_1, x_2, x_3, x_4, x_5]^T$ represents the probability of reaching Node 4 starting from each node. Set $\\mathbf{b} = [0, 0, 0, 0, 1]^T$ and solve for $\\mathbf{x}$.",
+        "multipleChoiceAnswers":{
+          "1":"[1/2,0,0,1,1]",
+          "2":"[1,0,0,1,1]",
+          "3":"[1,1,1,0,0]",
+          "4":"[1/2,1,1,0,0]"
+        },
+        "questionNumber":2,
+        "correctAnswer":"[1/2,0,0,1,1]"
+      },
+      "3":{
+        "question": "What does the previous questions' 0 node solution mean for the expected time to get from node 0 to node 4?",
+        "multipleChoiceAnswers":{
+          "1":"It takes an expected 1/2 steps to reach node 4 from node 0",
+          "2":"The expectation will go to infinity as the probability is not 1",
+          "3":"It takes an expected 2 steps to reach node 4 from node 0",
+          "4":"It is impossible to reach node 4 from node 0"
+        },
+        "correctAnswer":"The expectation will go to infinity as the probability is not 1",
+        "questionNumber":3
+      },
+      "4":{
+        "question": "What property do the two sets which cannot reach each other have when represented as a matrix?",
+        "multipleChoiceAnswers": {
+          "1":"The node sets sum are linearly independent of each other",
+          "2":"The nodes probabilities are always 0",
+          "3":"The probability of reaching the other set 1",
+          "4":"The steps it will take to reach the other set is -1"
+        },
+        "correctAnswer":"The node sets sum are linearly independent of each other",
+        "questionNumber":4
+      },
+      "5":{
+        "question":"What does this property tell you about probabilities and expectations of the 2 sets of nodes?",
+        "multipleChoiceAnswers":{
+          "1":"The expectation from one to the other will always be finite",
+          "2":"The expectation of any node outside of these sets with positive probability for each will be finite",
+          "3":"The expectation of any node outside of these sets with positive probability for each will be undefined",
+          "4":"The probability of getting from one set to the other is anywhere from 0 to anything below 1"
+        },
+        "correctAnswer":"The expectation of any node outside of these sets with positive probability for each will be undefined",
+        "questionNumber":5
+      },
+      "6":{
+        "question": "Which nodes have a finite expectation towards all other nodes in this new Markov Chain?",
+        "multipleChoiceAnswers":{
+          "1":"Node 0",
+          "2":"Node 1, Node 0",
+          "3":"Every Node",
+          "4":"None"
+        },
+        "correctAnswer":"Every Node",
+        "questionNumber":6,
+        "picture": "MarkovChainQuiz3Pt2.png"
+      },
+      "7":{
+        "question":"How does an extremely low probability differ from 0?",
+        "multipleChoiceAnswers":{
+          "1":"It is effectively the same as 0",
+          "2":"It allows for a defined expectation over time",
+          "3":"It guarantees reaching the state eventually in a finite amount of time",
+          "4":"It has no effect on the Markov Chain"
+        },
+        "correctAnswer":"It allows for a defined expectation over time",
+        "questionNumber":7
+      },
+      "8":{
+        "question":"Ignore previous markov chains, and consider exclusively the I matrix, can each node represented by this matrix reach the others?",
+        "multipleChoiceAnswers":{
+          "1":"Each node can reach each other",
+          "2":"Each node loops to itself",
+          "3":"Lower index Nodes can reach higher index nodes",
+          "4":"Higher index Nodes can reach lower index nodes"
+        },
+        "correctAnswer":"Each node loops to itself",
+        "questionNumber":8
+      },
+      "9":{
+        "question":"What does it mean for expectations if the probability of a node to another is between 0 and 1",
+        "multipleChoiceAnswers":{
+          "1":"The expectation will be undefined",
+          "2":"The expectation will be finite",
+          "3":"The expectation will be multiplied by a weight of p the probability",
+          "4":"All of the above CAN be true"
+        },
+        "correctAnswer":"The expectation will be undefined",
+        "questionNumber":9
+      },
+      "10":{
+        "question":"What does it mean for expectations if the probability of a node to another is 1",
+        "multipleChoiceAnswers":{
+          "1":"The expectation will be finite",
+          "2":"The expectation is always 0",
+          "3":"The expectation will be undefined",
+          "4":"None of the above"
+        },
+        "correctAnswer":"The expectation will be finite",
+        "questionNumber":10
+      }
+    },
+    "quiz4" :{
+      "1":{
+        "question":"The green represents success, red failure, what is the probability of reaching the success node starting at node 1?",
+        "multipleChoiceAnswers":{
+          "1":"0",
+          "2":"1/4",
+          "3":"1/2",
+          "4":"1"
+        },
+        "correctAnswer":"1/2",
+        "questionNumber":1,
+        "picture":"MarkovChainQuiz4Pt1.png"
+      },
+      "2":{
+        "question":"What is the probability of reaching the success node starting at node 2?",
+        "multipleChoiceAnswers":{
+          "1":"0",
+          "2":"1/4",
+          "3":"1/2",
+          "4":"1"
+        },
+        "correctAnswer":"0",
+        "questionNumber":2
+      },
+      "3":{
+        "question":"What is the probability of reaching the success node starting at node 0?",
+        "multipleChoiceAnswers":{
+          "1":"0",
+          "2":"1/4",
+          "3":"1/2",
+          "4":"1"
+        },
+        "correctAnswer":"1",
+        "questionNumber":3
+      },
+      "4":{
+        "question":"Consider the same situation but with n nodes pictured here, what is the probability of reaching the success node from node n?",
+        "multipleChoiceAnswers":{
+          "1":"0",
+          "2":"1/4",
+          "3":"1/2",
+          "4":"1"
+        },
+        "correctAnswer":"1",
+        "questionNumber":4,
+        "picture":"MarkovChainQuiz4Pt2.png"
+      },
+      "5":{
+        "question":"What is the probability of reaching the success node from node 0 in the new n walk?",
+        "multipleChoiceAnswers":{
+          "1":"0",
+          "2":"1/4",
+          "3":"1/2",
+          "4":"1"
+        },
+        "correctAnswer":"0",
+        "questionNumber":5
+      },
+      "6":{
+        "question":"What is the probability of reaching the success node from node j? (Hint: use recursion)",
+        "multipleChoiceAnswers":{
+          "1":"0",
+          "2":"j/n",
+          "3":"1-(j/n)",
+          "4":"1"
+        },
+        "correctAnswer":"j/n",
+        "questionNumber":6
+      },
+      "7":{
+        "question":"How many steps will it take to finish the walk starting from node j?",
+        "multipleChoiceAnswers":{
+          "1":"j(n-j)",
+          "2":"n-j",
+          "3":"n(n-j)",
+          "4":"$j$"
+        },
+        "correctAnswer":"j(n-j)",
+        "questionNumber":7
+      },
+      "8":{
+        "question":"What is the expected number of steps to reach the success node from node j in 1 attempt?",
+        "multipleChoiceAnswers":{
+          "1":"undefined",
+          "2":"j(n-j)",
+          "3":"$\\frac{j(n-j)}{2}$",
+          "4":"0"
+        },
+        "correctAnswer":"undefined",
+        "questionNumber":8
+      },
+      "9":{
+        "question": "Is the expected number of steps to succeed or fail the sum of the expectation to fail, and succeed?",
+        "multipleChoiceAnswers":{
+          "1":"Yes, it is the sum of the expectations",
+          "2":"No, it is not the sum of the expectations",
+          "3":"Only if the probabilities are 1",
+          "4":"Only if the probabilities are 0"
+        },
+        "correctAnswer":"No, it is not the sum of the expectations",
+        "questionNumber":9
+      },
+      "10":{
+        "question":"Explain the previous response",
+        "multipleChoiceAnswers":{
+          "1":"The expectation of steps has no information about which node it reaches",
+          "2":"The expectation of steps is the sum of the 2 because they are the only 2 end nodes",
+          "3":"The expectation is only the sum when they have high probability",
+          "4":"The expectation is only the sum when they have low probability"
+        },
+        "correctAnswer":"The expectation of steps has no information about which node it reaches",
+        "questionNumber":10
+      }
+    }
+  }
+}

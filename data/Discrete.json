@@ -1,0 +1,115 @@
+{"Discrete": {
+      "quiz1": {
+        "1": {
+          "question": "What is the negation of (P AND Q)?",
+          "multipleChoiceAnswers": {
+            "1": "(NOT P) OR (NOT Q)",
+            "2": "(NOT P) AND (NOT Q)",
+            "3": "P OR Q",
+            "4": "P AND Q"
+          },
+          "correctAnswer": "(NOT P) OR (NOT Q)",
+          "questionNumber": 1
+        },
+        "2": {
+          "question": "In set theory, what is A ∪ A?",
+          "multipleChoiceAnswers": {
+            "1": "A",
+            "2": "∅",
+            "3": "U",
+            "4": "A'"
+          },
+          "correctAnswer": "A",
+          "questionNumber": 2
+        },
+        "3": {
+          "question": "What is A ∩ ∅?",
+          "multipleChoiceAnswers": {
+            "1": "∅",
+            "2": "A",
+            "3": "U",
+            "4": "A'"
+          },
+          "correctAnswer": "∅",
+          "questionNumber": 3
+        },
+        "4": {
+          "question": "Is the statement (P OR (NOT P)) a tautology?",
+          "multipleChoiceAnswers": {
+            "1": "Yes",
+            "2": "No",
+            "3": "Sometimes",
+            "4": "Undefined"
+          },
+          "correctAnswer": "Yes",
+          "questionNumber": 4
+        },
+        "5": {
+          "question": "What is De Morgan's Law for (NOT (P OR Q))?",
+          "multipleChoiceAnswers": {
+            "1": "(NOT P) AND (NOT Q)",
+            "2": "(NOT P) OR (NOT Q)",
+            "3": "P AND Q",
+            "4": "P OR Q"
+          },
+          "correctAnswer": "(NOT P) AND (NOT Q)",
+          "questionNumber": 5
+        },
+        "6": {
+          "question": "What is the cardinality of {1,2,3,4,5}?",
+          "multipleChoiceAnswers": {
+            "1": "5",
+            "2": "6",
+            "3": "4",
+            "4": "∞"
+          },
+          "correctAnswer": "5",
+          "questionNumber": 6
+        },
+        "7": {
+          "question": "Is (P → Q) logically equivalent to ((NOT P) OR Q)?",
+          "multipleChoiceAnswers": {
+            "1": "Yes",
+            "2": "No",
+            "3": "Sometimes",
+            "4": "Undefined"
+          },
+          "correctAnswer": "Yes",
+          "questionNumber": 7
+        },
+        "8": {
+          "question": "What is A - B in set theory?",
+          "multipleChoiceAnswers": {
+            "1": "Elements in A but not in B",
+            "2": "Elements in both A and B",
+            "3": "Elements in A or B",
+            "4": "All elements"
+          },
+          "correctAnswer": "Elements in A but not in B",
+          "questionNumber": 8
+        },
+        "9": {
+          "question": "What is the power set of {1,2}?",
+          "multipleChoiceAnswers": {
+            "1": "{∅, {1}, {2}, {1,2}}",
+            "2": "{1,2}",
+            "3": "{∅}",
+            "4": "{{1}, {2}}"
+          },
+          "correctAnswer": "{∅, {1}, {2}, {1,2}}",
+          "questionNumber": 9
+        },
+        "10": {
+          "question": "If A ⊆ B and B ⊆ C, then A ⊆ C (transitivity)?",
+          "multipleChoiceAnswers": {
+            "1": "True",
+            "2": "False",
+            "3": "Sometimes",
+            "4": "Undefined"
+          },
+          "correctAnswer": "True",
+          "questionNumber": 10
+        }
+      }
+    }
+}

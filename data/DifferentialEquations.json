@@ -1,0 +1,115 @@
+{"DifferentialEquations": {
+      "quiz1": {
+        "1": {
+          "question": "What is the solution to the differential equation $y'=y$",
+          "multipleChoiceAnswers": {
+            "1": "$y=Ce^x$",
+            "2": "y=Cx",
+            "3": "$y=e^x$",
+            "4": "$y=Ce^(x^2)$"
+          },
+          "correctAnswer": "$y=Ce^x$",
+          "questionNumber": 1
+        },
+        "2": {
+          "question": "What is the solution to the differential equation $y'=xy$",
+          "multipleChoiceAnswers": {
+            "1": "$y=Ce^(x^2)/2$",
+            "2": "$y=Ce^x$",
+            "3": "$y=Cx^2$",
+            "4": "$y=Ce^(x^2/2)$"
+          },
+          "correctAnswer": "$y=Ce^(x^2/2)$",
+          "questionNumber": 2
+        },
+        "3": {
+          "question": "What is the solution to the differential equation $-y''=y$",
+          "multipleChoiceAnswers": {
+            "1": "y=Asin(x)+Bcos(x)",
+            "2": "$y=Ce^x$",
+            "3": "$y=Ax^2+Bx+C$",
+            "4": "$y=Ae^x+Be^(-x)$"
+          },
+          "correctAnswer": "y=Asin(x)+Bcos(x)",
+          "questionNumber": 3
+        },
+        "4": {
+          "question": "What is the solution to $y'+2y=0$?",
+          "multipleChoiceAnswers": {
+            "1": "$y=Ce^(-2x)$",
+            "2": "$y=Ce^(2x)$",
+            "3": "$y=Ce^(-x)$",
+            "4": "$2Ce^x$"
+          },
+          "correctAnswer": "$y=Ce^(-2x)$",
+          "questionNumber": 4
+        },
+        "5": {
+          "question": "What is the integrating factor for $y'+P(x)y=Q(x)$?",
+          "multipleChoiceAnswers": {
+            "1": "$e^(∫P(x)dx)$",
+            "2": "$e^(∫Q(x)dx)$",
+            "3": "∫P(x)dx",
+            "4": "P(x)"
+          },
+          "correctAnswer": "$e^(∫P(x)dx)$",
+          "questionNumber": 5
+        },
+        "6": {
+          "question": "What is the solution to $y'=3y$?",
+          "multipleChoiceAnswers": {
+            "1": "$y=Ce^(3x)$",
+            "2": "$3Ce^x$",
+            "3": "$y=Ce^x$",
+            "4": "3x"
+          },
+          "correctAnswer": "$y=Ce^(3x)$",
+          "questionNumber": 6
+        },
+        "7": {
+          "question": "What is the solution to $y''−y=0$?",
+          "multipleChoiceAnswers": {
+            "1": "$y=Ae^x+Be^(-x)$",
+            "2": "y=Asin(x)+Bcos(x)",
+            "3": "$y=Ax^2+Bx+C$",
+            "4": "$y=Ce^x$"
+          },
+          "correctAnswer": "$y=Ae^x+Be^(-x)$",
+          "questionNumber": 7
+        },
+        "8": {
+          "question": "What is the order of the differential equation $y'''+2y''+y'=0$?",
+          "multipleChoiceAnswers": {
+            "1": "3",
+            "2": "2",
+            "3": "1",
+            "4": "0"
+          },
+          "correctAnswer": "3",
+          "questionNumber": 8
+        },
+        "9": {
+          "question": "What type of DE is $y'=f(x)g(y)$?",
+          "multipleChoiceAnswers": {
+            "1": "Separable",
+            "2": "Linear",
+            "3": "Exact",
+            "4": "Homogeneous"
+          },
+          "correctAnswer": "Separable",
+          "questionNumber": 9
+        },
+        "10": {
+          "question": "What is the general solution to $y'=2x$?",
+          "multipleChoiceAnswers": {
+            "1": "$y=x^2+C$",
+            "2": "y=2x+C",
+            "3": "y=x+C",
+            "4": "$y=2x^2+C$"
+          },
+          "correctAnswer": "$y=x^2+C$",
+          "questionNumber": 10
+        }
+      }
+    }
+  }
